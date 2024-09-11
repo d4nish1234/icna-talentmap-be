@@ -1,0 +1,15 @@
+<h1>{{title}}</h1>
+{{#if isAuthenticated}}
+  <p>Hi {{username}}! Your user id is {{userId}}</p>
+  <a href="/users/id">View ID token claims</a>
+  <br />
+  <a href="/users">View all users</a>
+  <br />
+  <a href="/currentUser/">My Profile</a>
+  <br />
+  <br />
+  <a href="/auth/signout">Sign out</a>
+{{else}}
+  <p>Welcome to {{title}}</p>
+  <a href="/auth/signin">Sign in</a>
+{{/if}}

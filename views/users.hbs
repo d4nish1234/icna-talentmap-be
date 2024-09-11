@@ -1,0 +1,27 @@
+<h1>All users</h1>
+<table border="1">
+  <tr>
+    <th>ID</th>
+    <th>Display Name</th>
+    <th>User Principle Name</th>
+    <th>Given Name</th>
+    <th>Email</th>
+    <th>Job Title</th>
+    <th>Mobile Phone</th>
+  </tr>
+  {{#each users}}
+    {{#with this}}
+      <tr>
+        <td>{{id}}</td>
+        <td>{{displayName}}</td>
+        <td>{{userPrincipalName}}</td>
+        <td>{{givenName}}</td>
+        <td>{{mail}}</td>
+        <td>{{jobTitle}}</td>
+        <td>{{mobileNumber}}</td>
+      </tr>
+    {{/with}}
+  {{/each}}
+</table>
+<br />
+<a href="/">Go back</a>
